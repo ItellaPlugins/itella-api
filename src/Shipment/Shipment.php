@@ -225,6 +225,11 @@ class Shipment
       return;
     }
 
+    // If 2711 and has additional service for home delivery, do not change address
+    if (isset($this->additionalServices[AdditionalService::HOME_2711])) {
+      return;
+    }
+
     // Make sure pupCode is set
     if (!$this->pickup_point_id) {
       throw new ItellaException("Shipment set for pickup point but no location pupCode given");

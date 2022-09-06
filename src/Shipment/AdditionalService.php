@@ -26,10 +26,12 @@ class AdditionalService
   //const PICKUP_POINT = 3201;
   const PICKUP_POINT = 2106; // pakettikauppa pickup point service
 
+  const HOME_2711 = 3401;
+
   private $valid_code = array(
     self::COD, self::MULTI_PARCEL, self::FRAGILE,
     self::CALL_BEFORE_DELIVERY, self::OVERSIZED,
-    self::PICKUP_POINT
+    self::PICKUP_POINT, self::HOME_2711
   );
 
   private $valid_by_product_code = array(
@@ -37,7 +39,7 @@ class AdditionalService
       self::COD, self::MULTI_PARCEL, self::FRAGILE,
       self::CALL_BEFORE_DELIVERY, self::OVERSIZED
     ),
-    '2711' => array(self::PICKUP_POINT, self::COD)
+    '2711' => array(self::PICKUP_POINT, self::COD, self::HOME_2711)
   );
 
   private $code; // Additional service code
@@ -108,6 +110,9 @@ class AdditionalService
             throw new ItellaException(self::PICKUP_POINT . ' code must have: ' . implode(', ', $must_have));
           }
         }
+        break;
+      case self::HOME_2711:
+        // nothing to vilidate at this time
         break;
 
       default:
