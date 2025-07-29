@@ -365,16 +365,16 @@ class CallCourier
       $pickup->addAttribute('timeEarliest', gmdate('H:i:sP', strtotime($date . ' ' . $this->getPickupParamsValue('time_from'))));
       $pickup->addAttribute('timeLatest', gmdate('H:i:sP', strtotime($date . ' ' . $this->getPickupParamsValue('time_to'))));
 
-      $instructions = $shipment->addChild('Instructions');
-      $general_instruction_elements = array();
+      $general_instruction_values = array();
       if (!empty($this->getPickupParamsValue('info_general'))) {
-        $general_instruction_elements[] = $this->getPickupParamsValue('info_general');
+        $general_instruction_values[] = $this->getPickupParamsValue('info_general');
       }
       foreach ($track_numbers as $track_num) {
-        $general_instruction_elements[] = $track_num;
+        $general_instruction_values[] = $track_num;
       }
-      if (!empty($general_instruction_elements)) {
-        $instruction = $instructions->addChild('Instruction', implode(',', $general_instruction_elements));
+      if (!empty($general_instruction_values)) {
+        $instructions = $shipment->addChild('Instructions');
+        $instruction = $instructions->addChild('Instruction', implode(',', $general_instruction_values));
         $instruction->addAttribute('type', 'GENERAL');
       }
 
