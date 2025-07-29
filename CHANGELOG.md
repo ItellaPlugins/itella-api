@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.4.7]
 ### Fixed
 - fixed that in the courier invitation via Postra, the shipments numbers would be written under the Instructions parameter
 
