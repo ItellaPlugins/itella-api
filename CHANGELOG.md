@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.4.8]
 ### Fixed
 - fixed newline characters in email headers to comply with RFC 5322 requirements
 
