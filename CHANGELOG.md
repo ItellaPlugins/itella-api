@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.4.9]
 ### Added
 - added postcode sanitization to meet API requirements in courier call via Postra
 
