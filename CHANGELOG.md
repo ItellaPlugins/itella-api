@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.4.10]
 ### Added
 - added conversion of special letters to Latin letters in Postra courier call request
 
