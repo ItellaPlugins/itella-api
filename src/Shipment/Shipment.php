@@ -22,6 +22,14 @@ class Shipment
   const PRODUCT_POSTAL_PARCEL = 2103;
   const PRODUCT_EXPRESS_BUSINESS_DAY = 2317;
   const PRODUCT_HOME_PARCEL = 2104;
+  /**
+   * @deprecated Use PRODUCT_EXPRESS_BUSINESS_DAY instead.
+   */
+  const PRODUCT_COURIER = 2317;
+  /**
+   * @deprecated Use PRODUCT_PARCEL_CONNECT instead.
+   */
+  const PRODUCT_PICKUP = 2711;
 
   // Label sizes
   const LABEL_SIZE_A5 = 'A5';
