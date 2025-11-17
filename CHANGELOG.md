@@ -4,6 +4,7 @@
 ### Added
 - added new services: 2103, 2104
 - added ability to specify `Routing.Client` value
+- added new static function `AdditionalService::getCodesByProduct($product_code)` to get available additional services to that product
 
 ### Changed
 - `Shipment::PRODUCT_COURIER` is now deprecated. Use `Shipment::PRODUCT_EXPRESS_BUSINESS_DAY` instead.
