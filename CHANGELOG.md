@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.5.0]
 ### Added
 - added new services: 2103, 2104
 - added ability to specify `Routing.Client` value
