@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.5.1]
 ### Changed
 - courier call via POSTA has been disabled for Latvia
 
