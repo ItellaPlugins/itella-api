@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [2.5.4]
 ### Added
 - added a function in the Helper class to get the shipment tracking link
 
